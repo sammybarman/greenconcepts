@@ -4,9 +4,26 @@
   position: relative;
 }
 
-.about{
-  background-image: url("/static/img/bg.jpg");
-  background-color: #fcfff4;
+h3{
+  text-align: center;
+}
+
+.textstuff{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.aboutus{
+  background-image: url("/static/img/mom.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parallax-container{
+  position: relative;
+  text-align: center;
+  height: 500px;
 }
 
 input {
