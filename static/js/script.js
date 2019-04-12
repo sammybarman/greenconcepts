@@ -22,6 +22,10 @@ $(document).ready(function(){
   }
 });
 
+setInterval(function() {
+  $('.carousel').carousel('next');
+}, 3000);
+
 function isScrolledIntoView() {
     var elemTop = cardloc.getBoundingClientRect().top;
     var elemBottom = cardloc.getBoundingClientRect().bottom;
