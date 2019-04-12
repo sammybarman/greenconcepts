@@ -8,17 +8,46 @@ h3{
   text-align: center;
 }
 
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: #d2202f;
+}
+
 .textstuff{
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 2%;
 }
 
-.aboutus{
+.activator{
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+
+.card-small {
+  width: 325px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.cardstuff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services{
+  background-image: url("/static/img/back1.png");
+  background-repeat: repeat;
+}
+
+/* .aboutus{
   background-image: url("/static/img/mom.png");
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .parallax-container{
   position: relative;
@@ -40,9 +69,51 @@ article {
   float: left;
   position: relative;
 }
+
 article img {
   width: 100%;
 }
+
+/*---- SET UP FADEINUP ----*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
 
 /*---- SET UP CONTROL ----*/
 .slider-prev-next-control {
