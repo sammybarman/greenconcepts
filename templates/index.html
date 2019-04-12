@@ -1,66 +1,183 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>Temp</title>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="static/js/script.js"></script>
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <input checked type=radio name="slider" id="slide1" />
-      <input type=radio name="slider" id="slide2" />
-      <input type=radio name="slider" id="slide3" />
-      <input type=radio name="slider" id="slide4" />
-      <input type=radio name="slider" id="slide5" />
-      <div class="slider-wrapper">
-        <div class=inner>
-          <article>
-            <div class="info top-left"><h3>Malacca</h3></div>
-            <img src="https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg" />
-          </article>
-          <article>
-            <div class="info bottom-right"><h3>Cameron Highland</h3></div>
-            <img src="https://farm6.staticflickr.com/5812/23394215774_b76cd33a87_h_d.jpg" />
-          </article>
-          <article>
-            <div class="info bottom-left"><h3>New Delhi</h3></div>
-            <img src="https://farm8.staticflickr.com/7455/27879053992_ef3f41c4a0_h_d.jpg" />
-          </article>
-          <article>
-            <div class="info top-right"><h3>Ladakh</h3></div>
-            <img src="https://farm8.staticflickr.com/7367/27980898905_72d106e501_h_d.jpg" />
-          </article>
-          <article>
-            <div class="info bottom-left"><h3>Nubra Valley</h3></div>
-            <img src="https://farm8.staticflickr.com/7356/27980899895_9b6c394fec_h_d.jpg" />
-          </article>
-        </div>
-      </div>
-      <div class="slider-prev-next-control">
-        <label for=slide1></label>
-        <label for=slide2></label>
-        <label for=slide3></label>
-        <label for=slide4></label>
-        <label for=slide5></label>
-      </div>
-      <div class="slider-dot-control">
-        <label for=slide1></label>
-        <label for=slide2></label>
-        <label for=slide3></label>
-        <label for=slide4></label>
-        <label for=slide5></label>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temp</title>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/script.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+  <script type="text/javascript" src="static/js/materialize.min.js"></script>
+</head>
+<body>
+  <section class="wrapper">
+    <input checked type=radio name="slider" id="slide1" />
+    <input type=radio name="slider" id="slide2" />
+    <input type=radio name="slider" id="slide3" />
+    <input type=radio name="slider" id="slide4" />
+    <input type=radio name="slider" id="slide5" />
+    <div class="slider-wrapper">
+      <div class=inner>
+        <article>
+          <div class="info top-left"><h3>Malacca</h3></div>
+          <img src="https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg" />
+        </article>
+        <article>
+          <div class="info bottom-right"><h3>Cameron Highland</h3></div>
+          <img src="https://farm6.staticflickr.com/5812/23394215774_b76cd33a87_h_d.jpg" />
+        </article>
+        <article>
+          <div class="info bottom-left"><h3>New Delhi</h3></div>
+          <img src="https://farm8.staticflickr.com/7455/27879053992_ef3f41c4a0_h_d.jpg" />
+        </article>
+        <article>
+          <div class="info top-right"><h3>Ladakh</h3></div>
+          <img src="https://farm8.staticflickr.com/7367/27980898905_72d106e501_h_d.jpg" />
+        </article>
+        <article>
+          <div class="info bottom-left"><h3>Nubra Valley</h3></div>
+          <img src="https://farm8.staticflickr.com/7356/27980899895_9b6c394fec_h_d.jpg" />
+        </article>
       </div>
     </div>
+    <div class="slider-prev-next-control">
+      <label for=slide1></label>
+      <label for=slide2></label>
+      <label for=slide3></label>
+      <label for=slide4></label>
+      <label for=slide5></label>
+    </div>
+    <div class="slider-dot-control">
+      <label for=slide1></label>
+      <label for=slide2></label>
+      <label for=slide3></label>
+      <label for=slide4></label>
+      <label for=slide5></label>
+    </div>
+  </section>
 
-    <h3 class="about">About Us</h3>
-    <p>Global Green Concepts (P) Ltd. is uniquely positioned as a Total Environment Solutions Provider with over ten years experience in two major business domains: Water & Environment and Sustainable Development. We are internationally recognized with references in the entire gamut of environmental solutions including, but not limited to: Sewage & Effluent Treatment Technologies, Water Conservation Methods, Sustainable Development and Green Building Certifications & Processes. GGC offers clients a total package of turnkey solutions in all areas of sustainability and environmental engineering.</p>
 
+  <section class="parallax-container">
+    <div class="parallax"><img src="/static/img/mom.png"></div>
+    <div class="textstuff">
+      <br><br><br><br>
+      <h3>About Us</h3>
+      <hr>
+      <br>
+      <p>Global Green Concepts (P) Ltd. is uniquely positioned as a Total Environment Solutions Provider with over ten years experience in two major business domains: Water & Environment and Sustainable Development. We are internationally recognized with references in the entire gamut of environmental solutions including, but not limited to: Sewage & Effluent Treatment Technologies, Water Conservation Methods, Sustainable Development and Green Building Certifications & Processes. GGC offers clients a total package of turnkey solutions in all areas of sustainability and environmental engineering.</p>
+    </div>
+  </section>
+  <section class="services">
+    <br>
+    <h3>Services and Products</h3>
+    <hr>
+    <br>
+    <div id="cards" class="cardstuff">
 
-  </body>
+      <!-- First Card -->
+      <div class="card-small">
+        <div class="card hoverable small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="static/img/harvest.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End of First Card -->
+
+      <!-- Second Card -->
+      <div class="card-small">
+        <div class="card hoverable small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="static/img/build.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End of Second Card -->
+
+      <!-- Third Card -->
+      <div class="card-small">
+        <div class="card hoverable small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="static/img/build.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End of Third Card -->
+
+      <!-- Fourth Card -->
+      <div class="card-small">
+        <div class="card hoverable small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="static/img/build.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Some of Our Esteemed Clients</h3>
+    <hr>
+    <div class="carousel">
+      <a class="carousel-item"><img src="static/img/client1.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client2.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client3.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client4.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client5.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client6.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client7.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client8.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client9.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client10.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client11.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client12.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client13.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client14.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client16.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client15.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client18.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client17.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client19.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client20.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client21.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client22.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client23.jpg"></a>
+      <a class="carousel-item"><img src="static/img/client24.jpg"></a>
+    </div>
+  </section>
+</body>
 </html>
