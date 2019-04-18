@@ -1,25 +1,102 @@
-/*---- NUMBER OF SLIDE CONFIGURATION ----*/
-.wrapper {
-  width: 100%;
-  position: relative;
-}
-
 h3{
   text-align: center;
 }
 
-hr {
+footer{
+  background-color: black;
+}
+
+/* li{
+  background-color: white;
+} */
+
+/* All header rules*/
+.title-under {
   width: 30px;
   height: 2px;
   background-color: #d2202f;
 }
 
-.textstuff{
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 2%;
+/* Locations rules */
+.addrblock{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.addr{
+  width: 370px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.details{
+  display: inline-flex;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+/* PopUp form and Button rules*/
+#openform {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Footer rules */
+.footer-text{
+  text-align: center;
+  color: #B0E0E6;
+}
+
+.iconstuff{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.foot-icon{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  color: #B0E0E6;
+}
+
+form{
+  background-color: white;
+  bottom: 90px;
+  right: 25px;
+  position: fixed;
+  width: 325px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 999;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+  bottom: 82px;
+  right: 38px;
+  position: fixed;
+}
+
+/* Services and products rules */
 .activator{
   width: auto;
   height: auto;
@@ -27,7 +104,7 @@ hr {
 }
 
 .card-small {
-  width: 325px;
+  width: 300px;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -39,39 +116,46 @@ hr {
 }
 
 .services{
-  background-image: url("/static/img/back1.png");
+  background-image: url("/static/img/back.jpeg");
   background-repeat: repeat;
 }
 
-/* .aboutus{
-  background-image: url("/static/img/mom.png");
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
+/*All Parallax rules */
 .parallax-container{
   position: relative;
   text-align: center;
   height: 500px;
 }
 
-input {
-  display: none;
+.parallax {
+  width: 80%;
 }
 
-.inner {
-  width: 500%;
-  line-height: 0;
+/* Second parallax rules */
+.ad-icons{
+  margin-bottom: auto;
 }
 
-article {
-  width: 20%;
-  float: left;
-  position: relative;
+.ad-icon{
+  color: black;
+  font-size: 30px;
 }
 
-article img {
-  width: 100%;
+.icon-details{
+  font-size: 50px;
+}
+
+.tint{
+
+    width : 1000px;
+    height: 573px;
+
+    background:
+      linear-gradient(
+        rgba(0, 255, 0, 0.45),
+        rgba(0, 255, 0, 0.45)
+    ),
+    url("/static/img/happy.jpg")
 }
 
 /*---- SET UP FADEINUP ----*/
@@ -114,6 +198,26 @@ article img {
     -webkit-animation-name: fadeInUp;
 }
 
+/*---- NUMBER OF SLIDE CONFIGURATION ----*/
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.inner {
+  width: 500%;
+  line-height: 0;
+}
+
+article {
+  width: 20%;
+  float: left;
+  position: relative;
+}
+
+article img {
+  width: 100%;
+}
 
 /*---- SET UP CONTROL ----*/
 .slider-prev-next-control {
@@ -284,4 +388,11 @@ article img {
 
 #slide5:checked ~ .slider-wrapper .inner {
   margin-left: -400%;
+}
+
+/* Media rules */
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 95%;
+  }
 }
