@@ -13,6 +13,8 @@
   <script type="text/javascript" src="static/js/materialize.min.js"></script>
 </head>
 <body>
+
+  <!-- slider section -->
   <section class="wrapper">
     <input checked type=radio name="slider" id="slide1" />
     <input type=radio name="slider" id="slide2" />
@@ -58,103 +60,166 @@
       <label for=slide5></label>
     </div>
   </section>
+  <!-- end of slider section -->
 
-
-  <section class="parallax-container">
-    <div class="parallax"><img src="/static/img/mom.png"></div>
-    <div class="textstuff">
-      <br><br><br><br>
-      <h3>About Us</h3>
-      <hr>
-      <br>
-      <p>Global Green Concepts (P) Ltd. is uniquely positioned as a Total Environment Solutions Provider with over ten years experience in two major business domains: Water & Environment and Sustainable Development. We are internationally recognized with references in the entire gamut of environmental solutions including, but not limited to: Sewage & Effluent Treatment Technologies, Water Conservation Methods, Sustainable Development and Green Building Certifications & Processes. GGC offers clients a total package of turnkey solutions in all areas of sustainability and environmental engineering.</p>
+  <!-- parallax section -->
+  <section class="parallax-container center valign-wrapper">
+    <div class="parallax"><img src="/static/img/bg.jpg"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>About Us</h3>
+          <hr class="title-under">
+          <p>Global Green Concepts (P) Ltd. is uniquely positioned as a Total Environment Solutions Provider with over ten years experience in two major business domains: Water & Environment and Sustainable Development. We are internationally recognized with references in the entire gamut of environmental solutions including, but not limited to: Sewage & Effluent Treatment Technologies, Water Conservation Methods, Sustainable Development and Green Building Certifications & Processes. GGC offers clients a total package of turnkey solutions in all areas of sustainability and environmental engineering.</p>
+        </div>
+      </div>
     </div>
   </section>
+  <!-- end of parallax section -->
+
+  <!-- services and products section -->
   <section class="services">
     <br>
     <h3>Services and Products</h3>
-    <hr>
+    <hr class="title-under">
     <br>
     <div id="cards" class="cardstuff">
 
       <!-- First Card -->
-      <div class="card-small">
+      <div id="card1" tabindex="0" class="card-small">
         <div class="card hoverable small">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="static/img/harvest.png">
+            <img class="activator modal-trigger" href="#modal1" src="static/img/harvest.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title activator grey-text text-darken-4 modal-trigger" href="#modal1">Rainwater Harvesting<i class="material-icons right">more_vert</i></span>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Rainwater Harvesting</h4>
+                <br>
+                <iframe src="https://www.youtube.com/embed/ISKlCfG5Wdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Environmental Advantages</h6>
+                <ol>
+                  <li>Recharge of Groundwater, replenishes the deeper layers of the earth’s crust which in turn insulates the earth from rise in temperature, reducing global warming</li>
+                  <li>Reduces loss of top soil, surface runoff, thereby avoids silting of ponds and lakes</li>
+                  <li>Reduces hardness, salinity and TDS contents in the bore well</li>
+                  <li>All materials used in this Technology are eco-friendly and recyclable</li>
+                  <li>Reduces significant carbon foot prints</li>
+                  <li>Technology works on the Gravitational Principle</li>
+                  <li>Reducing the dependency on Corporation water supply, the Pumping of water from distant places, deeper depths & Movement of Water Tankers</li>
+                  <li>Checks over exploitation of groundwater source</li>
+                  <li>Prevents water logging in low lying areas</li>
+                </ol>
+                <h5>Sustainability</h6>
+                <ol>
+                  <li>Groundwater Recharge has bridged the gap between acute shortage & available water during the Peak summer months</li>
+                  <li>Rooftop RWH system has reduced the dependency on water tankers, municipal/ corporation water supply and Groundwater</li>
+                  <li>The groundwater reserves will remain intact for future generations</li>
+                </ol>
+                <br>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+              </div>
+            </div>
+            <!-- End of Modal Structure -->
+
           </div>
         </div>
       </div>
       <!-- End of First Card -->
 
       <!-- Second Card -->
-      <div class="card-small">
+      <div id="card2" tabindex="0" class="card-small">
         <div class="card hoverable small">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="static/img/build.png">
+            <img class="activator modal-trigger" href="#modal2" src="static/img/build.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title activator grey-text text-darken-4 modal-trigger" href="#modal2">Infrastructure and Construction<i class="material-icons right">more_vert</i></span>
+
+            <!-- Modal Structure -->
+            <div id="modal2" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div>
+            <!-- End of Modal Structure -->
+
           </div>
         </div>
       </div>
       <!-- End of Second Card -->
 
       <!-- Third Card -->
-      <div class="card-small">
+      <div id="card3" tabindex="0" class="card-small">
         <div class="card hoverable small">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="static/img/build.png">
+            <img class="activator modal-trigger" href="#modal3" src="static/img/build.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title activator grey-text text-darken-4 modal-trigger" href="#modal3">Waste Water Treatment<i class="material-icons right">more_vert</i></span>
+
+            <!-- Modal Structure -->
+            <div id="modal3" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div>
+            <!-- End of Modal Structure -->
+
           </div>
         </div>
       </div>
       <!-- End of Third Card -->
 
       <!-- Fourth Card -->
-      <div class="card-small">
+      <div id="card4" tabindex="0" class="card-small">
         <div class="card hoverable small">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="static/img/build.png">
+            <img class="activator modal-trigger" href="#modal4" src="static/img/build.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title activator grey-text text-darken-4 modal-trigger" href="#modal4">Water Management Consulting<i class="material-icons right">more_vert</i></span>
+
+            <!-- Modal Structure -->
+            <div id="modal4" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div>
+            <!-- End of Modal Structure -->
+
           </div>
         </div>
       </div>
+      <!-- End of Third Card -->
+
     </div>
     <br>
     <br>
   </section>
+  <!-- end of services and products section -->
+
+  <!-- clients carousel section -->
   <section>
     <br>
     <h3>Some of Our Esteemed Clients</h3>
-    <hr>
+    <hr class="title-under">
     <div class="carousel">
       <a class="carousel-item"><img src="static/img/client1.jpg"></a>
       <a class="carousel-item"><img src="static/img/client2.jpg"></a>
@@ -182,5 +247,138 @@
       <a class="carousel-item"><img src="static/img/client24.jpg"></a>
     </div>
   </section>
+  <!-- end of clients carousel section -->
+
+  <!-- floating button and form section -->
+  <section>
+    <button type="button" onclick="formDisplay()" class="btn-floating btn-large waves-effect waves-light red" name="openform" id="openform"><i class="material-icons">call</i></button>
+    <form>
+      <h6>Contact Us for a Site Visit</h6>
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="name" type="text" class="validate" required>
+        <label for="name">Name</label>
+      </div>
+      <div class="input-field">
+        <input id="enquiry" type="text" class="validate" required>
+        <label for="enquiry">Enquiry</label>
+      </div>
+      <div class="input-field">
+        <input id="phone_number" type="tel" class="validate" pattern="[0-9]{10}" required>
+        <label for="phone_number">Phone Number</label>
+      </div>
+      <div class="input-field">
+        <input id="email" type="email" class="validate" required>
+        <label for="email">Email</label>
+      </div>
+
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+
+      <p><i class="material-icons details">contact_mail</i><a href="mailto:info@greenconcept.com?subject=Enquiry">info@greenconcept.com</a></p>
+      <p><i class="material-icons details">contact_phone</i><a href="tel:+919971230537">+91 9971230537</a></p>
+      <p><i class="material-icons details">contact_phone</i><a href="tel:+918669031516">+91 8669031516</a></p>
+      <div class="arrow-down"></div>
+    </form>
+  </section>
+  <!-- end of floating button and form section -->
+
+  <!-- second parallax section -->
+  <section class="parallax-container center valign-wrapper">
+    <div class="parallax tint"></div>
+    <div class="container">
+      <div class="row ad-icons">
+        <div class="ad-icon col s6">
+          <i class="fa fa-smile-o fa-3 icon-details"></i>
+          <p>1000+ Clients</p>
+        </div>
+        <div class="ad-icon col s6">
+          <i class="fa fa-rocket fa-3 icon-details"></i>
+          <p>2500+ Projects</p>
+        </div>
+        <div class="ad-icon col s6">
+          <i class="fa fa-globe fa-3 icon-details"></i>
+          <p>Global Presence</p>
+        </div>
+        <div class="ad-icon col s6">
+          <i class="fa fa-tint fa-3 icon-details"></i>
+          <p>Reliable</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of second parallax section -->
+
+  <!-- our locations section -->
+  <section>
+    <br>
+    <h3>Our Locations</h3>
+    <hr class="title-under">
+    <br>
+    <div class="addrblock">
+
+      <!-- First Card -->
+      <div class="addr">
+        <div class="card medium">
+          <div class="card-content">
+            <h5><i class="material-icons details">room</i>India (Headquarters)</h5>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d668.9143358413568!2d73.8882726220336!3d18.485882975338107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWinner%E2%80%99s+Court%2C+Lullanagar+Junction%2C+Above+ZK%E2%80%99s+Hotel%2C+Kondhwa%2C+Pune+%E2%80%93+411040!5e0!3m2!1sen!2sin!4v1555450094189!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <br><br>
+            <p>Winner’s Court, Office No. 203, Lullanagar Junction, Above ZK’s Hotel, Kondhwa, Pune – 411040</p>
+          </div>
+        </div>
+      </div>
+      <!-- End of First Card -->
+
+      <!-- Second Card -->
+      <div class="addr">
+        <div class="card medium">
+          <div class="card-content">
+            <h5><i class="material-icons details">room</i>India (Branch Office)</h5>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3499.305880506451!2d77.1069576500384!3d28.710403387218008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%23+14%2C+First+Floor%2C+D+1%2C+C%2F67%2C+CSC+1%2C+Sector+6%2C+Rohini%2C+New+Delhi+110085+!5e0!3m2!1sen!2sin!4v1555450334384!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <br><br>
+            <p># 14, First Floor, D 1, C/67, CSC 1, Sector 6, Rohini, New Delhi 110085</p>
+          </div>
+        </div>
+      </div>
+      <!-- End of Second Card -->
+
+      <!-- Third Card -->
+      <div class="addr">
+        <div class="card medium">
+          <div class="card-content">
+            <h5><i class="material-icons details">room</i>United Arab Emirates</h5>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14424.449327984661!2d55.48439221305305!3d25.334011334220317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSharjah+Airport+International+Free+Zone%2C+P6+-073%2C+Sharjah%2C+U.A.E!5e0!3m2!1sen!2sin!4v1555460592396!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <br><br>
+            <p>Sharjah Airport International Free Zone, P6 -073, Sharjah, U.A.E</p>
+          </div>
+        </div>
+      </div>
+      <!-- End of Third Card -->
+
+    </div>
+    <br><br><br>
+  </section>
+  <!-- end of our locations section -->
+
+  <!-- Footer Section -->
+  <footer>
+    <br>
+    <div class="iconstuff">
+      <a href="#" class="fa fa-facebook fa-3 foot-icon"></a>
+      <a href="#" class="fa fa-instagram fa-3 foot-icon"></a>
+      <a href="#" class="fa fa-twitter fa-3 foot-icon"></a>
+      <a href="#" class="fa fa-linkedin fa-3 foot-icon"></a>
+    </div>
+    <div class="footer-text">
+      <p>&copy; 2018 Global Green Concepts (P) Ltd.&nbsp;&nbsp;All rights reserved.<p>
+      <p>IT Partner: </p>
+    </div>
+    <br><br><br>
+  </footer>
+  <!-- End of Footer Section -->
+
 </body>
 </html>
