@@ -15,12 +15,16 @@ $(document).ready(function(){
   $('.carousel').carousel();
   $('.modal').modal();
   cardloc = document.getElementById('cards').getBoundingClientRect();
-  if (isScrolledIntoView == true) {
-     console.log("LOLOLOL");
-  }
-  else {
-    console.log("FALSE");
-  }
+  $(window).scroll( function(){
+    $('.hideme').each( function(i){
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+      if( bottom_of_window > bottom_of_object ){
+        $(this).removeClass("hideme");
+        $(this).addClass("animated animatedFadeInUp fadeInUp");
+      }
+    });
+  });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -29,30 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
     direction: 'top',
     hoverEnabled: false
   });
-});
-
-$("#card1").focusin(function() {
-  $("card2").css("display", "none");
-  $("card3").css("display", "none");
-  $("card4").css("display", "none");
-});
-
-$("#card2").focusin(function() {
-  $("card1").css("display", "none");
-  $("card3").css("display", "none");
-  $("card4").css("display", "none");
-});
-
-$("#card3").focusin(function() {
-  $("card1").css("display", "none");
-  $("card2").css("display", "none");
-  $("card4").css("display", "none");
-});
-
-$("#card4").focusin(function() {
-  $("card1").css("display", "none");
-  $("card2").css("display", "none");
-  $("card3").css("display", "none");
 });
 
 setInterval(function() {

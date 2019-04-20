@@ -101,6 +101,11 @@ form{
   position: fixed;
 }
 
+/* All cards rules */
+.hideme {
+  opacity:0;
+}
+
 /* Services and products rules */
 .activator{
   width: auto;
