@@ -17,6 +17,11 @@ footer{
   background-color: #d2202f;
 }
 
+.background-tint {
+    background-color: rgba(0,255,0,.6); 
+    background-blend-mode: multiply;
+}
+
 /* Locations rules */
 .addrblock{
   display: flex;
