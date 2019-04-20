@@ -145,19 +145,6 @@ form{
   font-size: 50px;
 }
 
-.tint{
-
-    width : 1000px;
-    height: 573px;
-
-    background:
-      linear-gradient(
-        rgba(0, 255, 0, 0.45),
-        rgba(0, 255, 0, 0.45)
-    ),
-    url("/static/img/happy.jpg")
-}
-
 /*---- SET UP FADEINUP ----*/
 @keyframes fadeInUp {
     from {
