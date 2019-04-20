@@ -18,7 +18,7 @@ footer{
 }
 
 .background-tint {
-    background-color: rgba(103,146,47,.6); 
+    background-color: rgba(103,146,47,.6);
     background-blend-mode: multiply;
 }
 
@@ -141,8 +141,13 @@ form{
   margin-bottom: auto;
 }
 
+.background-tint {
+  background-color: rgba(103,146,47,.6);
+  background-blend-mode: multiply;
+}
+
 .ad-icon{
-  color: black;
+  color: white;
   font-size: 30px;
 }
 
