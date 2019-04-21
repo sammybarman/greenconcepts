@@ -56,6 +56,7 @@ function formDisplay() {
 }
 
 // added active toggler
+<<<<<<< HEAD
 // $(document).ready(function(){
 //     $('ul.right li').on('click', function(){
 //         var clicked = $(this);
@@ -66,3 +67,15 @@ function formDisplay() {
 //         });
 //         $(this).addClass('active');
 //     });
+=======
+$(document).ready(function(){
+    $('ul.right li').on('click', function(){
+        var clicked = $(this);
+        $('ul.right li').each(function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+            }
+        });
+        $(this).addClass('active');
+    });
+>>>>>>> 5bb157a4fc95b336480471392248300f941e01e3
