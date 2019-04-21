@@ -1,5 +1,4 @@
 var radio_num = 1;
-var cardloc;
 setInterval(check, 8000);
 function check() {
   document.getElementById("slide"+radio_num.toString()).checked = false;
@@ -14,7 +13,6 @@ $(document).ready(function(){
   $('.parallax').parallax();
   $('.carousel').carousel();
   $('.modal').modal();
-  cardloc = document.getElementById('cards').getBoundingClientRect();
   $(window).scroll( function(){
     $('.hideme').each( function(i){
       var bottom_of_object = $(this).offset().top + $(this).outerHeight();
