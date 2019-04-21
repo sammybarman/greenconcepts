@@ -2,6 +2,35 @@ h3{
   text-align: center;
 }
 
+/* nav-bar adjustments */
+nav {
+    max-height:70px !important;;
+    line-height: 70px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    max-height:70px !important;;
+    line-height: 70px;
+}
+
+nav .button-collapse i {
+    max-height:70px !important;;
+    line-height: 70px;
+}
+
+nav .brand-logo {
+    font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        max-height:70px !important;;
+        line-height: 70px;
+    }
+}
+
+/* end of adjustments */
+
 footer{
   background-color: black;
 }

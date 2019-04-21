@@ -54,3 +54,15 @@ function formDisplay() {
     $("form").css("display", "block");
   }
 }
+
+// added active toggler
+$(document).ready(function(){
+    $('ul.right li').on('click', function(){
+        var clicked = $(this);
+        $('ul.right li').each(function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+            }
+        });
+        $(this).addClass('active');
+    });
