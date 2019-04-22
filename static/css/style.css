@@ -51,15 +51,15 @@ footer{
     background-blend-mode: multiply;
 }
 /* Slider rules  */
- .carousel {
+ /* .carousel {
     max-height: 600px;
     width: auto;
- }
+ } */
 
-.carousel-slider {
+/* .carousel-slider {
     max-height: 500px;
     width: 100%;
-}
+} */
 
 
 /* Locations rules */
