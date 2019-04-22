@@ -50,16 +50,17 @@ footer{
     background-color: rgba(103,146,47,.6);
     background-blend-mode: multiply;
 }
-/* Slider rules */
-/* .carousel {
+/* Slider rules  */
+ .carousel {
     max-height: 600px;
-    /* width: 100%; */
-} */
+    width: auto;
+ }
 
 .carousel-slider {
     max-height: 500px;
-    /* width: 100%; */
+    width: 100%;
 }
+
 
 /* Locations rules */
 .addrblock{
