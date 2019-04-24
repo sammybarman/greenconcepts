@@ -53,6 +53,11 @@ function formDisplay() {
   }
 }
 
+// Collapsible navbar
+$(function() {
+      $('.sidenav').sidenav();
+    })
+
 // slider functionality
 // $('.carousel.carousel-slider').carousel({
 //     fullWidth: true,
