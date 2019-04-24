@@ -57,7 +57,11 @@ function formDisplay() {
 $(function() {
       $('.sidenav').sidenav();
     })
-
+ // Scrollspy implementation
+ $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+  
 // slider functionality
 // $('.carousel.carousel-slider').carousel({
 //     fullWidth: true,
