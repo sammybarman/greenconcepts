@@ -147,11 +147,11 @@ form{
 }
 
 /* Services and products rules */
-.activator{
+/* .activator{
   width: auto;
   height: auto;
   display: inline-block;
-}
+} */
 
 .card-small {
   width: 300px;
@@ -262,7 +262,7 @@ article img {
 }
 
 /*---- SET UP CONTROL ----*/
-.slider-prev-next-control {
+/* .slider-prev-next-control {
   height: 50px;
   position: absolute;
   top: 50%;
@@ -305,10 +305,10 @@ article img {
 .slider-dot-control label:hover {
   background: #ccc;
   border-color: #777;
-}
+} */
 
 /* Info Box */
-.info {
+/* .info {
   position: absolute;
   font-style: italic;
   line-height: 20px;
@@ -341,10 +341,10 @@ article img {
 .info.bottom-right {
   bottom: 30px;
   right: 30px;
-}
+} */
 
 /* Slider Styling */
-.slider-wrapper {
+/* .slider-wrapper {
   width: 100%;
   overflow: hidden;
   background: #fff;
@@ -367,10 +367,10 @@ article img {
   -webkit-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-}
+} */
 
 /*---- SET POSITION FOR SLIDE ----*/
-#slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after {
+/* #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -430,8 +430,18 @@ article img {
 
 #slide5:checked ~ .slider-wrapper .inner {
   margin-left: -400%;
+} */
+
+
+.carousel-slider{
+  background-size: cover;
+  width: 100%;
+  height: 400px;
 }
 
+.carousel-item{
+  max-height: 420px;
+}
 /* Media rules */
 @media screen and (max-width: 479px) {
   .modal {

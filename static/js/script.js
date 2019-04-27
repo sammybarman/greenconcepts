@@ -1,17 +1,25 @@
-var radio_num = 1;
-setInterval(check, 8000);
-function check() {
-  document.getElementById("slide"+radio_num.toString()).checked = false;
-  radio_num = radio_num + 1;
-  if(radio_num > 5){
-    radio_num = 1;
-  }
-  document.getElementById("slide"+radio_num.toString()).checked = true;
-}
-
 $(document).ready(function(){
   $('.parallax').parallax();
-  $('.carousel').carousel();
+  $('.scrollspy').scrollSpy();
+  $('.sidenav').sidenav();
+  $("#clients").carousel({
+    indicators: true
+  });
+  $("#mainslider").carousel({
+    fullWidth: true,
+    indicators: true
+  });
+  var autoplay = true;
+  setInterval(function() {
+    if(autoplay) {
+      $('#mainslider').carousel('next');
+    }
+  }, 4500);
+  $('#mainslider').hover(function(){
+    autoplay = false;
+  },function(){
+    autoplay = true;
+  });
   $('.modal').modal();
   $(window).scroll( function(){
     $('.hideme').each( function(i){
@@ -34,15 +42,17 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 setInterval(function() {
-  $('.carousel').carousel('next');
+  $('#clients').carousel('next');
 }, 3000);
 
-function isScrolledIntoView() {
-    var elemTop = cardloc.getBoundingClientRect().top;
-    var elemBottom = cardloc.getBoundingClientRect().bottom;
-    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-    return isVisible;
-}
+// $(".carousel").mouseenter(function(){
+//   autoplay = false;
+//   console.log("Hovering");
+// });
+// $(".carousel").mouseleave(function(){
+//   autoplay = true;
+// });
+
 
 function formDisplay() {
   if ($("form").css("display") != "none") {
@@ -53,15 +63,8 @@ function formDisplay() {
   }
 }
 
-// Collapsible navbar
-$(function() {
-      $('.sidenav').sidenav();
-    })
- // Scrollspy implementation
- $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-  });
-  
+
+
 // slider functionality
 // $('.carousel.carousel-slider').carousel({
 //     fullWidth: true,
