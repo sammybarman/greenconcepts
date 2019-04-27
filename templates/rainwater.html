@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temp</title>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/script.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+  <script type="text/javascript" src="static/js/materialize.min.js"></script>
+</head>
+<body>
+
+
+  <!-- header section -->
+  <nav style="background-color:#67922f;" class="background-tint">
+    <div class="nav-wrapper">
+      <a style="margin-left:20px"href="#" class="brand-logo"><img style="max-height:70px" src="/static/img/logo.png"></a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#clients">Clients/Partners</a></li>
+        <li><a href="#locations">Our Locations</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="slide-out">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#clients">Clients/Partners</a></li>
+    <li><a href="#locations">Our Locations</a></li>
+  </ul>
+ <!-- Blank section to make things work -->
+  <section style="width:0; height:0;">
+
+  </section>
+
+  <!-- floating button and form section -->
+  <section>
+    <button type="button" onclick="formDisplay()" class="btn-floating btn-large waves-effect waves-light red" name="openform" id="openform"><i class="material-icons">call</i></button>
+    <form>
+      <h6>Contact Us for a Site Visit</h6>
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="name" type="text" class="validate" required>
+        <label for="name">Name</label>
+      </div>
+      <div class="input-field">
+        <input id="enquiry" type="text" class="validate" required>
+        <label for="enquiry">Enquiry</label>
+      </div>
+      <div class="input-field">
+        <input id="phone_number" type="tel" class="validate" pattern="[0-9]{10}" required>
+        <label for="phone_number">Phone Number</label>
+      </div>
+      <div class="input-field">
+        <input id="email" type="email" class="validate" required>
+        <label for="email">Email</label>
+      </div>
+
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+
+      <p><i class="material-icons details">contact_mail</i><a href="mailto:info@greenconcept.com?subject=Enquiry">info@greenconcept.com</a></p>
+      <p><i class="material-icons details">contact_phone</i><a href="tel:+919971230537">+91 9971230537</a></p>
+      <p><i class="material-icons details">contact_phone</i><a href="tel:+918669031516">+91 8669031516</a></p>
+      <div class="arrow-down"></div>
+    </form>
+  </section>
+  <!-- end of floating button and form section -->
+
+  <!-- Footer Section -->
+  <footer>
+    <br>
+    <div class="iconstuff">
+      <a href="https://www.facebook.com/pages/category/Organization/Global-Green-Concepts-527312020766023/ " target="_blank" class="fa fa-facebook fa-3 foot-icon"></a>
+      <a href="#" class="fa fa-instagram fa-3 foot-icon"></a>
+      <a href="https://twitter.com/sharmilaoswal?lang=en" target="_blank" class="fa fa-twitter fa-3 foot-icon"></a>
+      <a href="https://in.linkedin.com/company/global-green-concepts-pvt--ltd-" target="_blank" class="fa fa-linkedin fa-3 foot-icon"></a>
+    </div>
+    <div class="footer-text">
+      <p>&copy; 2018 Global Green Concepts (P) Ltd.&nbsp;&nbsp;All rights reserved.<p>
+      <p>IT Partner: </p>
+    </div>
+    <br><br><br>
+  </footer>
+  <!-- End of Footer Section -->
+
+</body>
+</html>
